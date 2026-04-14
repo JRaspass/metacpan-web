@@ -1,7 +1,6 @@
 package MetaCPAN::Web::Controller::View;
 
 use Moose;
-use experimental 'postderef';
 use namespace::autoclean;
 use Try::Tiny qw( try );
 

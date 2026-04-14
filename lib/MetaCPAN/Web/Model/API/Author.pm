@@ -252,13 +252,11 @@ my $profile_data = {
     },
 };
 
-for my $name ( keys %$profile_data ) {
-    my $data    = $profile_data->{$name};
-    my $profile = MetaCPAN::Web::ProfileLink->new(
+for my ( $name, $data ) (%$profile_data) {
+    $data = MetaCPAN::Web::ProfileLink->new(
         name => $name,
         %$data,
     );
-    $profile_data->{$name} = $profile;
 }
 
 sub profile_data {

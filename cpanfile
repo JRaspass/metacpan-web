@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+requires 'perl', 'v5.36';
+
 requires 'Catalyst', '5.90103';
 requires 'Catalyst::Action::RenderView';
 requires 'Catalyst::Authentication::User';
